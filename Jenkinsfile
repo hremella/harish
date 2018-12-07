@@ -7,7 +7,7 @@ stage('Docker Build') {
 
 steps {
 
-sh """ docker build -t hremella/apache . """
+sh """ docker build -t pi00219/apache . """
 
 }
 }
@@ -18,7 +18,7 @@ usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
 
 sh """
 docker login --username $USERNAME --password $PASSWORD
-docker push hremella/apache
+docker push pi00219/apache
 """ 
 }
 } 
